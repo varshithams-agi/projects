@@ -1,0 +1,39 @@
+<app-nav></app-nav>
+
+<body>
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+        <h1>Update</h1>
+      <div class="form-field">
+        <input type="name" placeholder="Name of the Person" name="name" ngModel/>
+      </div>
+      
+      <div class="form-field">
+        <input type="email" placeholder="Email Id" name="email" ngModel/>    
+    </div>
+        <div class="form-field">
+          <input type="phno" placeholder="Phone Number" name="phno" ngModel/>                
+        </div>
+        <div class="form-field">
+          <input type="id" placeholder="Account Number" name="id" ngModel/>                
+        </div>
+        <div class="form-field">
+            <input type="balance" placeholder="Balance" name="balance" ngModel/>                
+          </div>
+  
+ 
+
+    <div class="form-group">
+
+        <button type="submit" class="btn btn-primary" routerLink="/update" >Update </button> &nbsp;
+        <br>
+            <br>
+           
+        <button type="submit" class="btn btn-primary" routerLink="/userdetails">View User details</button>
+
+        </div>
+
+ 
+  <!-- <button onclick="togglePopup()" class="first-button">Create Account</button> -->
+
+</form>
+</body>

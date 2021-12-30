@@ -1,0 +1,30 @@
+
+
+
+<app-navbar></app-navbar>
+<body>
+  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+    <h1>Create Account</h1>
+  <div class="form-field">
+    <input type="name" placeholder="Name of the Person" name="name" ngModel/>
+  </div>
+  
+  <div class="form-field">
+    <input type="email" placeholder="Email Id" name="email" ngModel/>    
+</div>
+    <div class="form-field">
+      <input type="phno" placeholder="Phone Number" name="phno" ngModel/>                
+    </div>
+    <!-- <div class="form-field">
+      <input type="accountnumber" placeholder="Account number" name="accountnumber" ngModel/>                
+    </div> -->
+  
+  <div class="form-field">
+    <button class="btn" type="submit">Create Account</button>
+ 
+  <!-- <button onclick="togglePopup()" class="first-button">Create Account</button> -->
+</div>
+</form>
+</body>
+
+

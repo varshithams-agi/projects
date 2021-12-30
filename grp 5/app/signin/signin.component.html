@@ -1,0 +1,25 @@
+<app-nav></app-nav>
+<body>
+
+<!-- <div id="bg"></div> -->
+<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+  <h1>Sign In</h1>
+  <div class="form-field">
+    <input type="id" placeholder="Email / Username" name="id" id="id" required [(ngModel)]="id"/>
+  </div>
+  
+  <div class="form-field">
+    <input type="password" placeholder="Password" name="password" id="password" required [(ngModel)]="password"/>                         
+  </div>
+  
+  <div class="form-field">
+    <button class="btn" >login</button>
+  </div>
+</form>
+
+
+
+  
+</body>
+<!-- <router-outlet></router-outlet> -->
+
